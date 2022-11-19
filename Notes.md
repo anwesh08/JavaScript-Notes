@@ -40,7 +40,7 @@
 
 15. Every execution context have there own memory space.
 
-16. Even if the js file have no code js engine creates a global execution context.
+16. Even if the js file have no code js engine creates a global execution context. So the smallest js program is an empty js file.
 
 17. Window is a global object and collection of functions.
 
