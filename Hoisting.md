@@ -18,6 +18,8 @@ Namaste Javascript
 7
 ```
 
+2. Not defined is when a variable is not declared whereas undefined is the value initialised to a variable during memory creation phase.
+
 <code>Example 2 :-</code>
 ```java
 getName();
@@ -37,8 +39,6 @@ f getName() {
    console.log("Namaste Javascript")
 }
 ```
-
-2. Not defined is when a variable is not declared whereas undefined is the value initialised to a variable during memory creation phase.
 
 <code>Example 3 :-</code>
 ```java
