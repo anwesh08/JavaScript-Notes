@@ -55,3 +55,21 @@ function getName() {
 Namaste Javascript
 Uncaught ReferenceError: x is not defined.
 ```
+
+3. Arrow funciton behaves as a variable. So calling it before defining it gives undefined as output.
+
+<code>Example 4 :-</code>
+```java
+getName();
+console.log(x);
+console.log(getName);
+var x = 7;
+var getName = () => {
+   console.log("Namaste Javascript");
+}
+```
+
+<code>Output :-</code>
+```java
+Uncaught TypeError: getName is not a function.
+```
