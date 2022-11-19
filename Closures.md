@@ -1,6 +1,9 @@
-1. <b>Closures</b> :- A function bundled together with its lexical environment.
+<h1>Closures</h1>
+<p>
 
-2. We can pass a function as a parameter during function call. Also we can return a function. It not only returns the function but also returns its lexical scope.
+- <b>Closures</b> means functions bundled together with its lexical environment.
+
+- We can pass a function as a parameter during function call. Also we can return a function. It not only returns the function but also returns its lexical scope.
 
 <code>Example :-</code>
 ```java
@@ -23,7 +26,7 @@ f y() {
 7
 ```
 
-3. Closures comes with some corner cases.
+- Closures comes with some corner cases.
 
 <code>Example :-</code>
 ```java
@@ -66,7 +69,7 @@ z();
 7, 900
 ```
 
-4. <b>Uses of Closures</b> :- 
+- <b>Uses of Closures</b> :- 
       - Module Design Pattern
       - Currying
       - Functions like once
@@ -76,4 +79,5 @@ z();
       - Iterators
       - and many more...
 
-5. 
+- 
+</p>
