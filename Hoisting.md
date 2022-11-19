@@ -56,7 +56,7 @@ Namaste Javascript
 Uncaught ReferenceError: x is not defined.
 ```
 
-3. Arrow funciton behaves as a variable. So calling it before defining it gives undefined as output.
+3. Arrow funciton behaves as a variable. So calling it before defining it gives TypeError as output.
 
 <code>Example 4 :-</code>
 ```java
