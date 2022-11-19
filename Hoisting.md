@@ -38,6 +38,8 @@ f getName() {
 }
 ```
 
+2. Not defined is when a variable is not declared whereas undefined is the value initialised to a variable during memory creation phase.
+
 <code>Example 3 :-</code>
 ```java
 getName();
@@ -53,5 +55,3 @@ function getName() {
 Namaste Javascript
 Uncaught ReferenceError: x is not defined.
 ```
-
-2. Not defined is when a variable is not declared whereas undefined is the value initialised to a variable during memory creation phase.
