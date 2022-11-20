@@ -175,6 +175,6 @@ Namaste Javascript
 5
 ```
 
-- Here, the setTimeOut will have its closure within the close funtion which creates different copies of a single function with different values and makes it easier.
+- In the above example, the setTimeOut will have its closure within the close funtion which creates different copies of a single function with different values and makes it easier.
 
 </p>
