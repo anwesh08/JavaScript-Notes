@@ -69,15 +69,21 @@ z();
 7, 900
 ```
 
-- <b>Uses of Closures</b> :- 
-      - Module Design Pattern
-      - Currying
-      - Functions like once
-      - Memorize
-      - Maintaining state in async world
-      - setTimeouts
-      - Iterators
-      - and many more...
+- <b>Uses of Closures</b> :- <br>
+      - Module Design Pattern<br>
+      - Currying<br>
+      - Functions like once<br>
+      - Memorize<br>
+      - Maintaining state in async world<br>
+      - setTimeouts<br>
+      - Iterators<br>
+      - Data hiding and encapsulation<br>
+      - and many more...<br>
+
+- Disadvantages of Closures :-<br>
+      - Over consumption of memory
+
+- Garbage collector is like a program in js engine which freeeze up the unused memory.
 
 - <b>setTimeout</b> :- This method sets a timer which executes a function or specified piece of code once the timer expires.
 
