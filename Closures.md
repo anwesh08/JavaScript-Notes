@@ -79,5 +79,95 @@ z();
       - Iterators
       - and many more...
 
-- 
+- <b>setTimeout</b> :- This method sets a timer which executes a function or specified piece of code once the timer expires.
+
+- In this example, "Namaste Javascript" will get executed as soon as we run the js file but the "1" will be executed after 3000ms.
+
+<code>Example :-</code>
+```java
+function z() {
+   var i = 1;
+   setTimeout(function () {
+      console.log(i);
+   }, 3000);
+   console.log("Namaste Javascript");
+}
+```
+<code>Output :-</code>
+```java
+Namaste Javascript
+1
+```
+
+- The loop has already compiled and the value of i has been changed to 6 in the memory. So it prints 6 everytime. When we change the var with let it create a fresh value of i in the memory and creates 5 different copies of i and with every function call it calls different values of i.
+
+<code>Example :-</code>
+```java
+function z() {
+   for (var i = 1; i <= 5; i++) {
+      setTimeout(function () {
+         console.log(i);
+      }, i * 1000);
+   }
+   console.log("Namaste Javascript");
+}
+```
+<code>Output :-</code>
+```java
+Namaste Javascript
+6
+6
+6
+6
+6
+```
+
+<code>Example :-</code>
+```java
+function z() {
+   for (let i = 1; i <= 5; i++) {
+      setTimeout(function () {
+         console.log(i);
+      }, i * 1000);
+   }
+   console.log("Namaste Javascript");
+}
+```
+<code>Output :-</code>
+```java
+Namaste Javascript
+1
+2
+3
+4
+5
+```
+
+- We can also solve this problem by using var, by creating a new close function and running the setTimeout function inside it and passing i to the function as parameter.
+
+<code>Example :-</code>
+```java
+function z() {
+   for (var i = 1; i <= 5; i++) {
+      function close(i) {
+         setTimeout(function () {
+            console.log(i);
+         }, i * 1000);
+      }
+      close(i);
+   }
+   console.log("Namaste Javascript");
+}
+```
+<code>Output :-</code>
+```java
+Namaste Javascript
+1
+2
+3
+4
+5
+```
+
+
 </p>
