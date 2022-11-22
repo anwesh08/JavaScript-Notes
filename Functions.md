@@ -28,7 +28,7 @@ var b = function () {
 Uncaught TypeError: b is not a function.
 ```
 
-- Major difference between FE & FS is hoisting.
+- Major difference between FE & FS is hoisting. Here in the above example, function a is called (reason: hoisting) but function b throws an error because the function was initialised to a variable "b" and this variable was called before it was initialised.
 
 - Anonymous Function :- Function w/o a name. Doesn't have their own identity. Its looks similar to function statement. Its is used where functions are used as values.
 
