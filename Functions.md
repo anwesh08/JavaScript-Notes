@@ -47,11 +47,8 @@ Uncaught TypeError: b is not a function.
 ```
 
 - Major difference between Function Expression & Function Statement is hoisting.
-||||||| e57b33c
-- Major difference between FE & FS is hoisting.
-=======
+
 - Major difference between FE & FS is hoisting. Here in the above example, function a is called (reason: hoisting) but function b throws an error because the function was initialised to a variable "b" and this variable was called before it was initialised.
->>>>>>> 83de085d426651c07e291fa0a3819c24212f9713
 
 - Anonymous Function :- Function w/o a name. Doesn't have their own identity. Its looks similar to function statement. Its is used where functions are used as values.
 
