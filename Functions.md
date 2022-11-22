@@ -1,4 +1,4 @@
-<h1>First Class Functions</h1>
+<h1>Functions</h1>
 
 <p>
 
@@ -35,7 +35,7 @@ Uncaught TypeError: b is not a function.
 ```java
 // Anonymous Function 
 function () {
-   
+
 }
 ```
 
