@@ -181,4 +181,34 @@ const b = () => {
    console.log("arrow function")
 }
 ```
+
+- <b>Callback Functions</b> :- 
+- Function that is passed on as argument to another function is called callback function.
+
+```java
+setTimeout(function (), {
+   console.log("timer");
+}, 5000)
+function x() {
+   console.log("x");
+   y();
+}
+x(function y() {
+   console.log("y");
+})
+```
+<code>Output :- </code>
+```java
+y
+x
+timer
+```
+
+- setTimeout helps turn JS which is sinhlethreaded and synchronous into asynchronous.
+
+- Event listeners can also invoke closures with scope.
+
+- Event listeners consume a lot of memory which can potentially slow down the website therefore it is good practice to remove if it is not used.
+
+
 </p>
