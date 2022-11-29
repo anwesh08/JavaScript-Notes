@@ -45,8 +45,7 @@ const calculateDiameter = function (radius) {
 console.logcalculateDiameter(radius));
 ```
 
--  Problem in the program: 
-   - Repetitive - same code, different logic
+-  Problem in the program: Repetitive use of - same code, different logic
 
 - To overcome this problem make the function generic.
                                  
