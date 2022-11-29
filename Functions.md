@@ -2,7 +2,7 @@
 
 <p>
 
-```java
+```javascript
 // Function Statement aka Function Declaration
 a();
 function a() {
@@ -10,13 +10,13 @@ function a() {
 }
 ```
 <code>Output :- </code>
-```java
+```javascript
 a called
 ```
 
 - Functions can act like a value.
 
-```java
+```javascript
 // Function Expression
 b();
 var b = function () {
@@ -24,12 +24,11 @@ var b = function () {
 }
 ```
 <code>Output :- </code>
-```java
+```javascript
 Uncaught TypeError: b is not a function.
 ```
 
-<<<<<<< HEAD
-```java
+```javascript
 // Difference Between Function Expression & Function Statement
 a();
 b();
@@ -41,7 +40,7 @@ var b = function () {
 }
 ```
 <code>Output :- </code>
-```java
+```javascript
 a called
 Uncaught TypeError: b is not a function.
 ```
@@ -52,20 +51,20 @@ Uncaught TypeError: b is not a function.
 
 - Anonymous Function :- Function w/o a name. Doesn't have their own identity. Its looks similar to function statement. Its is used where functions are used as values.
 
-```java
+```javascript
 // Anonymous Function 
 function () {
 
 }
 ```
 <code>Output :- </code>
-```java
+```javascript
 Uncaught SyntaxError: function statements require a function name.
 ```
 
 - Named Function Expression:  Instead of anonymous function, we use a function with a name
 
-```java
+```javascript
 // Named Function Expression
 function a() {
    console.log("a called");
@@ -78,7 +77,7 @@ b();
 xyz();
 ```
 <code>Output :- </code>
-```java
+```javascript
 a called
 b called
 Uncaught ReferenceError: xyz is not defined.
@@ -86,7 +85,7 @@ Uncaught ReferenceError: xyz is not defined.
 
 - This throws an error because xyz() is only accessible to inner scope and cannot be accessed in the global context. Check the below example.
 
-```java
+```javascript
 // Named Function Expression
 function a() {
    console.log("a called");
@@ -98,7 +97,7 @@ a();
 b();
 ```
 <code>Output :- </code>
-```java
+```javascript
 a called
 f xyz(){
    console.log(xyz);
@@ -110,7 +109,7 @@ f xyz(){
 
 - Arguments :- Values that are passed inside a function. 
 
-```java
+```javascript
 // Difference Between Parameters & Argument 
 function a() {
    console.log("a called");
@@ -130,7 +129,7 @@ b(1, 2);
 
 - This ability makes the functions as "First Class Citizens" in JS
 
-```java
+```javascript
 // First Class Functions 
 var b = function (param1) {
    console.log(param1);
@@ -145,7 +144,7 @@ b(xyz);
 f xyz() {}
 ```
 
-```java
+```javascript
 // First Class Functions 
 var b = function (param1) {
    console.log(param1);
@@ -157,7 +156,7 @@ b(function xyz() {});
 f xyz() {}
 ```
 
-```java
+```javascript
 // First Class Functions 
 var b = function () {
    return function xyz() {
@@ -169,13 +168,13 @@ console.log(b());
 
 ```
 <code>Output :- </code>
-```java
+```javascript
 f xyz() {}
 ```
 
 - <b>Arrow Functions</b> :- Introduced in ES6 (Ecma Script).
 
-```java
+```javascript
 // Arrow Functions
 const b = () => {
    console.log("arrow function")
@@ -185,7 +184,7 @@ const b = () => {
 - <b>Callback Functions</b> :- 
 - Function that is passed on as argument to another function is called callback function.
 
-```java
+```javascript
 setTimeout(function (), {
    console.log("timer");
 }, 5000)
@@ -198,7 +197,7 @@ x(function y() {
 })
 ```
 <code>Output :- </code>
-```java
+```javascript
 y
 x
 timer
