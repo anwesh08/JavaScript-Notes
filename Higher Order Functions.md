@@ -47,7 +47,8 @@ console.logcalculateDiameter(radius));
 
 -  Problem in the program: 
    - Repetitive - same code, different logic
-   - So make the function generic.
+
+- To overcome this problem make the function generic.
                                  
 <b>Generic Function :</b>
 <code>Example :-</code>
