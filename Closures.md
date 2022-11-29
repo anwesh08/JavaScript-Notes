@@ -6,7 +6,7 @@
 - We can pass a function as a parameter during function call. Also we can return a function. It not only returns the function but also returns its lexical scope.
 
 <code>Example :-</code>
-```java
+```javascript
 function x() {
    var a = 7;
    return function y() {
@@ -19,7 +19,7 @@ console.log(z);
 z();
 ```
 <code>Output :-</code>
-```java
+```javascript
 f y() {
    console.log(a);
 }
@@ -29,7 +29,7 @@ f y() {
 - Closures comes with some corner cases.
 
 <code>Example :-</code>
-```java
+```javascript
 function x() {
    var a = 7;
    return function y() {
@@ -43,14 +43,14 @@ console.log(z);
 z();
 ```
 <code>Output :-</code>
-```java
+```javascript
 f y() {
    console.log(a);
 }
 100
 ```
 <code>Example :-</code>
-```java
+```javascript
 function z() {
    var b = 900;
    function x() {
@@ -65,7 +65,7 @@ function z() {
 z();
 ```
 <code>Output :-</code>
-```java
+```javascript
 7, 900
 ```
 
@@ -90,7 +90,7 @@ z();
 - In this example, "Namaste Javascript" will get executed as soon as we run the js file but the "1" will be executed after 3000ms.
 
 <code>Example :-</code>
-```java
+```javascript
 function z() {
    var i = 1;
    setTimeout(function () {
@@ -100,7 +100,7 @@ function z() {
 }
 ```
 <code>Output :-</code>
-```java
+```javascript
 Namaste Javascript
 1
 ```
@@ -108,7 +108,7 @@ Namaste Javascript
 - The loop has already compiled and the value of i has been changed to 6 in the memory. So it prints 6 everytime. When we change the var with let it create a fresh value of i in the memory and creates 5 different copies of i and with every function call it calls different values of i.
 
 <code>Example :-</code>
-```java
+```javascript
 function z() {
    for (var i = 1; i <= 5; i++) {
       setTimeout(function () {
@@ -119,7 +119,7 @@ function z() {
 }
 ```
 <code>Output :-</code>
-```java
+```javascript
 Namaste Javascript
 6
 6
@@ -129,7 +129,7 @@ Namaste Javascript
 ```
 
 <code>Example :-</code>
-```java
+```javascript
 function z() {
    for (let i = 1; i <= 5; i++) {
       setTimeout(function () {
@@ -140,7 +140,7 @@ function z() {
 }
 ```
 <code>Output :-</code>
-```java
+```javascript
 Namaste Javascript
 1
 2
@@ -152,7 +152,7 @@ Namaste Javascript
 - We can also solve this problem by using var, by creating a new close function and running the setTimeout function inside it and passing i to the function as parameter.
 
 <code>Example :-</code>
-```java
+```javascript
 function z() {
    for (var i = 1; i <= 5; i++) {
       function close(i) {
@@ -166,7 +166,7 @@ function z() {
 }
 ```
 <code>Output :-</code>
-```java
+```javascript
 Namaste Javascript
 1
 2
