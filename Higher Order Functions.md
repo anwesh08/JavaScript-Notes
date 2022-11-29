@@ -2,6 +2,7 @@
 <p>
 
 - A function which takes another fucntion as an argument is called a higher order function.
+
 - A function which is passed into the higher order function is called the callback function(which is called afterwards in the function ; possible because functions are first class citizens in js)
 
 <code>Example :-</code>
@@ -45,8 +46,8 @@ console.logcalculateDiameter(radius));
 ```
 
 -  Problem in the program: 
-    Repetitive - same code, different logic
-                                    So make the function generic.
+   - Repetitive - same code, different logic
+   - So make the function generic.
                                  
 <b>Generic Function :</b>
 <code>Example :-</code>
@@ -83,9 +84,6 @@ console.log(radius.map(area));
 // We can use map function which is a higher order function and returns an array as an output. So we can pass the callback function to it as an parameter.
 ```
 
-Here, Array.prototype.calculate = it appears in all the arrays. 
-Here, this is pointed to the array. 
-
 <code>Example :-</code>
 ```javascript
 const radius = [3, 1, 2, 4];
@@ -102,7 +100,10 @@ const diameter = function (radius) {
    return 2 * radius;
 }
 
-// Polyfil for map
+// Here, Array.prototype.calculate = it appears in all the arrays. 
+// Here, this is pointed to the array. 
+
+// Polyfill for map
 Array.prototype.calculate = function(logic) {
    const output = [];
    for (let i = 0; i < this.length; i++) {
@@ -115,7 +116,5 @@ console.log(radius.calculate(area));
 // Map function can also we wriiten like this
 ```
 
-
-
-Functional programing deals with pure funtion,composition of function, reusability, modularity
+- Functional programming deals with pure funtion, composition of function, reusability, modularity.
 </p> 
