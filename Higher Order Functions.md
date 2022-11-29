@@ -116,5 +116,5 @@ console.log(radius.calculate(area));
 // Map function can also we wriiten like this
 ```
 
-- Functional programming deals with pure funtion, composition of function, reusability, modularity.
+- Functional programming deals with pure function, composition of function, reusability, modularity.
 </p> 
