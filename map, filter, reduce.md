@@ -180,9 +180,11 @@ const age = users.reduce(function (age, curr) {
    }
    return age
 }, {}) 
+```
 
 - We can chain map(), filter() & reduce()
 
+```
 // FirstName whose age < 30 using chaining of function
 const nameOfAgeLessThanThirty = users.filter((x) => x.age < 30).map((x) => x.firstName)
 
