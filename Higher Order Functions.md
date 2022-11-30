@@ -6,17 +6,19 @@
 - A function which is passed into the higher order function is called the callback function(which is called afterwards in the function ; possible because functions are first class citizens in js)
 
 <code>Example :-</code>
+
 ```javascript
 function x() {
-   console.log("Namaste");
+  console.log("Namaste");
 }
 function y(x) {
-   x();
+  x();
 }
 // y is the higher order function
 ```
 
 <code>Example :-</code>
+
 ```javascript
 const radius = [3, 1, 2, 4];
 const calculateArea = function (radius) {
@@ -45,37 +47,38 @@ const calculateDiameter = function (radius) {
 console.logcalculateDiameter(radius));
 ```
 
--  Problem in the program: Repetitive use of - same code, different logic
+- Problem in the program: Repetitive use of - same code, different logic
 
 - To overcome this problem make the function generic.
-                                 
+
 <b>Generic Function :</b>
 <code>Example :-</code>
+
 ```javascript
 const radius = [3, 1, 2, 4];
 
 const area = function (radius) {
-   return Math.PI * radius * radius;
-}
+  return Math.PI * radius * radius;
+};
 
 const circumference = function (radius) {
-   return 2 * Math.PI * radius;
-}
+  return 2 * Math.PI * radius;
+};
 
 const diameter = function (radius) {
-   return 2 * radius;
-}
+  return 2 * radius;
+};
 
-const calculate = function(radius, logic) {
-   const output = [];
-   for (let i = 0; i < radius.length; i++) {
-      output.push(logic(radius[i]));
-   }
-   return output;
-}
-console.log(calculate(radius, area))
-console.log(calculate(radius, diameter))
-console.log(calculate(radius, circumference))
+const calculate = function (radius, logic) {
+  const output = [];
+  for (let i = 0; i < radius.length; i++) {
+    output.push(logic(radius[i]));
+  }
+  return output;
+};
+console.log(calculate(radius, area));
+console.log(calculate(radius, diameter));
+console.log(calculate(radius, circumference));
 
 // calculate function is a higher order function whereas all other functions like area, circumference, diameter are callback function.
 
@@ -85,36 +88,37 @@ console.log(radius.map(area));
 ```
 
 <code>Example :-</code>
+
 ```javascript
 const radius = [3, 1, 2, 4];
 
 const area = function (radius) {
-   return Math.PI * radius * radius;
-}
+  return Math.PI * radius * radius;
+};
 
 const circumference = function (radius) {
-   return 2 * Math.PI * radius;
-}
+  return 2 * Math.PI * radius;
+};
 
 const diameter = function (radius) {
-   return 2 * radius;
-}
+  return 2 * radius;
+};
 
-// Here, Array.prototype.calculate = it appears in all the arrays. 
-// Here, this is pointed to the array. 
+// Here, Array.prototype.calculate = it appears in all the arrays.
+// Here, this is pointed to the array.
 
 // Polyfill for map
-Array.prototype.calculate = function(logic) {
-   const output = [];
-   for (let i = 0; i < this.length; i++) {
-      output.push(logic(this[i]));
-   }
-   return output;
-}
+Array.prototype.calculate = function (logic) {
+  const output = [];
+  for (let i = 0; i < this.length; i++) {
+    output.push(logic(this[i]));
+  }
+  return output;
+};
 
 console.log(radius.calculate(area));
 // Map function can also we wriiten like this
 ```
 
 - Functional programming deals with pure function, composition of function, reusability, modularity.
-</p> 
+</p>
