@@ -131,7 +131,7 @@ function findMax(arr) {
       max = i;
     }
   }
-  return sum;
+  return max;
 }
 
 console.log(findMax(arr));
