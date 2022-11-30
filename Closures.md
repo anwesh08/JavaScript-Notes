@@ -191,4 +191,65 @@ Namaste Javascript
 
 - In the above example, the setTimeOut will have its closure within the close funtion which creates different copies of a single function with different values and makes it easier.
 
+<b>Trust Issues with setTimeout()</b> :
+
+- The setTimeout function stores it in the callback queue which is executed only after call stack is empty, even if setTimeout is set to 0ms. 
+
+<code>Example :-</code>
+
+```javascript
+console.log("Start")
+
+setTimeout(function cb1() {
+   console.log("CallBack")
+}, 0)
+
+function cb2() {
+  console.log("CallBack");
+}
+
+setTimeout(cb2, 0)
+
+console.log("End")
+```
+
+<code>Output :-</code>
+
+```
+Start
+End
+CallBack
+CallBack
+```
+
+- setTimeout ensures that minimum it will take the time mentioned because it may be paused due to call stack not empty.
+
+<code>Example :-</code>
+
+```javascript
+console.log("Start")
+
+setTimeout(function cb() {
+   console.log("CallBack")
+}, 5000)
+
+console.log("End")
+
+let startDate = new Date().getTime()
+let endDate = startDate;
+while (endDate < startDate + 10000) {
+   endDate = new Date().getTime()
+}
+console.log("while expires")
+```
+
+<code>Output :-</code>
+
+```
+Start
+End
+while expires
+CallBack
+```
+
 </p>
