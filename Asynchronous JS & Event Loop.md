@@ -1,4 +1,4 @@
-<h1>Asynchronous JS & Event Loop</h1>
+<h1><u>Asynchronous</u> <u>JS</u> <u>&</u> <u>Event</u> <u>Loop</u></h1>
 <p>
 
 - JS can only do a single operation at a time as Js is a sinlge-threaded language which uses call stack present in the Js engine to execute the function().

@@ -1,7 +1,7 @@
-<h1>Map, Filter & Reduce</h1>
+<h1><u>Map</u>, <u>Filter</u> <u>&</u> <u>Reduce</u></h1>
 <p>
 
-<b>Map Function</b> : 
+<b><u>Map</u> <u>Function</u></b> : 
 
 - Used when we need to tranform an array. Eg, double the values, triple, find binary of the values.
 
@@ -46,7 +46,7 @@ console.log(output4);
 ];
 ```
 
-<b>Filter Function</b> : 
+<b><u>Filter</u> <u>Function</u></b> : 
 
 - Used to filter the values inside an array. Eg, find odd elements, even elemnets, elements > 4, etc
 
@@ -87,7 +87,7 @@ console.log(output4);
 [5, 1, 3];[(2, 6)];[(5, 6)];[(1, 2)];
 ```
 
-<b>Reduce Function</b> : 
+<b><u>Reduce</u> <u>Function</u></b> : 
 
 - When you have to iterate over all the elements of an array and come out with a single element. Eg, finding sum, max elemnet, etc. 
 
@@ -128,7 +128,7 @@ console.log(output);
 17;
 ```
 
-<b>Tricky Example</b> :
+<b><u>Tricky</u> <u>Example</u></b> :
 
 <code>Example 1 :-</code>
 
