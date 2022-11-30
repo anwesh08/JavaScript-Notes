@@ -1,4 +1,4 @@
-<h1>Basics of JavaScript</h1>
+<h1><u>Basics</u> <u>of</u> <u>JavaScript</u></h1>
 
 1. Everything in JS happens inside an <b><i>Execution Context</i></b>.
 
