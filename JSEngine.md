@@ -1,4 +1,4 @@
-<h1>JS Engine</h1>
+<h1><u>JS Engine</u></h1>
 <p>
 
 - JS runtime environment contains all elements required to run JS.
@@ -30,7 +30,7 @@
 
 ![V8 JS Engine](Photos/SS6.jpg)
 
-<b>Mark Sweep Algorithm</b> :
+<b><u>Mark</u> <u>Sweep</u> <u>Algorithm</u></b> :
 
 - Basic idea about Mark & Sweep Algo:
 
