@@ -62,7 +62,7 @@ CallBack; // callback function is executed if the button is clicked, otherwise t
 
 - Micro task is given priority over callback tasks.
 
-- Too many micro tasks generated can cause Starvation (nit giving time to callback tasks to execute).
+- Too many micro tasks generated can cause Starvation (not giving time to callback tasks to execute).
 
 <code>Example :-</code>
 
