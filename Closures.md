@@ -85,7 +85,7 @@ z();
 
 - Garbage collector is like a program in js engine which freeeze up the unused memory.
 
-- <b>setTimeout</b> : 
+<b>setTimeout</b> : 
   
 - This method sets a timer which executes a function or specified piece of code once the timer expires.
 
