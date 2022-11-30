@@ -10,12 +10,16 @@
         ii) <b>Code Component</b> :- Also known as Thread of Execution. Where the code is executed line by line.
      </p>
 
+![Execution Context](Photos/SS7.jpg)
+
 3. JS is a synchronus single-threaded language.
 
 4. When we run a code a global execution context is created. Execution context is created in two phases :- <br>
      i) <b>Memory Creation Phase</b> : It allocates memory to different variables & functions. For vaiables it stores undefined while for function its stores the code.
         <br>
      ii) <b>Code Execution Phase</b> : Runs through the whole js program line by line. Here the value of variables are assigned in memory.
+
+![Execution Context](Photos/SS8.jpg)
 
 5. Everytime a funtion is called it creates a execution context.
 
@@ -26,3 +30,7 @@
 8. Js manages all the execution context using call stack and global execution context is at the bottom of the stack.
 
 9. Call stack maintains the order of execution contexts.
+
+10. Call Stack is also called : 
+
+![Call Stack Other Names](Photos/SS9.jpg)
