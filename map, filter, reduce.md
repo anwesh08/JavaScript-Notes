@@ -1,7 +1,9 @@
 <h1>Map, Filter & Reduce</h1>
 <p>
 
-<b>Map Function</b> : Used when we need to tranform an array. Eg, double the values, triple, find binary of the values.
+<b>Map Function</b> : 
+
+- Used when we need to tranform an array. Eg, double the values, triple, find binary of the values.
 
 <code>Example :-</code>
 
@@ -44,7 +46,9 @@ console.log(output4);
 ];
 ```
 
-<b>Filter Function</b> : Used to filter the values inside an array. Eg, find odd elements, even elemnets, elements > 4, etc
+<b>Filter Function</b> : 
+
+- Used to filter the values inside an array. Eg, find odd elements, even elemnets, elements > 4, etc
 
 <code>Example :-</code>
 
@@ -83,9 +87,14 @@ console.log(output4);
 [5, 1, 3];[(2, 6)];[(5, 6)];[(1, 2)];
 ```
 
-<b>Reduce Function</b> : When you have to iterate over all the elements of an array and come out with a single element. Eg, finding sum, max elemnet, etc. 
+<b>Reduce Function</b> : 
+
+- When you have to iterate over all the elements of an array and come out with a single element. Eg, finding sum, max elemnet, etc. 
+
 - reduce() takes two arguments: function & inital value.
+
 - The function takes 2 parameters: accumulator(accumulates the result) & current(represents the values of the array).
+
 - Initial value takes the inital value of the accumulator.
 
 <code>Example :-</code>
@@ -184,7 +193,7 @@ const age = users.reduce(function (age, curr) {
 
 - We can chain map(), filter() & reduce()
 
-```
+```javascript
 // FirstName whose age < 30 using chaining of function
 const nameOfAgeLessThanThirty = users.filter((x) => x.age < 30).map((x) => x.firstName)
 
