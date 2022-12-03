@@ -5,7 +5,7 @@
 
 1. <b><u>CallBack</u> <u>Hell</u></b>
 
-- <b>Asynchronous operations in JavaScript can be achieved through callbacks</b>. Whenever there are multiple dependent Asynchronous operations it will result in a lot of <b>nested callbacks</b>. This will cause a <b>'pyramid of doom'</b> like structure.
+- <b>Asynchronous operations in JavaScript can be achieved through callbacks</b>. Whenever there are multiple dependent Asynchronous operations it will result in a lot of <b>nested callbacks</b>. This will cause a <b>'pyramid of doom'</b> like structure(code grows horizontally instead of vertically).
 
 - Callbacks are useful when we want to perfrom some extra functionality with our already existing function for example passing an error handling callback to our already created function, BUT when callbacks within themselves start taking in other functions as callbacks then that mess that you are left with is known as the Callback Hell leading to <b>unreadable code</b>, hence <b>unmaintanable code</b>.
 
