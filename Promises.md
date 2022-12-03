@@ -73,4 +73,68 @@ console.log(user);
 
 - And another benefit of promises is that it is immutable.
 
+<b><u>Creating</u> <u>A</u> <u>Promise</u>, <u>Chaining</u> <u>&</u> <u>Error</u> <u>Handling</u></b> :
+
+<code>Example :-</code>
+
+```javascript
+const cart = ["shoes", "pants", "kurta"];
+
+// create a new promise
+createOrder(cart)
+  .then(function (orderId) {
+    console.log(orderId);
+    return orderId;
+  })
+  // Attaching a function to a promise
+  .then(function (orderId) {
+    return proceedToPayment(orderId);
+  })
+  .then(function (paymentInfo) {
+    console.log(paymentInfo);
+    return paymentInfo;
+  })
+  // Attaching an error message to a promise
+  // This will catch all the errors from the above promises.
+  .catch(function () {
+    console.log(err.message);
+  })
+  // When catch is used at last of the chain it will handle all the errors in the promise chain
+  .then(function (orderId) {
+    console.log("No matter what happens, I will be called.");
+  });
+
+/// Producer
+function createOrder(cart) {
+   // Promise has 2 parameters which are given by javascript.
+   // We can only resolve or reject a promise.
+  const pr = new Promise(function (resolve, reject) {
+    // createOrder
+    // validateCart
+    // orderId
+    if (validateCart(cart)) {
+      const err = new Error("Cart is not valid");
+      reject();
+    }
+    // logic for createOrder
+    const orderId = "12345";
+    if (orderId) {
+      resolve(orderId);
+    }
+  });
+  return pr;
+}
+
+function proceedToPayment(orderId) {
+  ///
+  return new Promise(function (resolve, reject) {
+    resolve("Payment Successful");
+  });
+}
+
+function validateCart(cart) {
+  return true;
+}
+```
+
 </p>
