@@ -106,8 +106,8 @@ createOrder(cart)
 
 /// Producer
 function createOrder(cart) {
-   // Promise has 2 parameters which are given by javascript.
-   // We can only resolve or reject a promise.
+  // Promise has 2 parameters which are given by javascript.
+  // We can only resolve or reject a promise.
   const pr = new Promise(function (resolve, reject) {
     // createOrder
     // validateCart
@@ -135,6 +135,91 @@ function proceedToPayment(orderId) {
 function validateCart(cart) {
   return true;
 }
+```
+
+<b>Promise Task</b> :
+
+<code>Task :-</code>
+
+```javascript
+// Task:
+// Make use of promise chain with example async functions
+// creatOrder, proceedToPayment, showOrderSummary, updateWallet
+
+const cart = ["shoes", "pants", "kurta"];
+createOrder(cart)
+  .then(function (orderId) {
+    console.log("Order ID", orderId);
+    return proceedToPayment(orderId);
+  })
+  .then(function (paymentInfo) {
+    console.log("paymentInfo", paymentInfo);
+    return showOrderSummary(paymentInfo);
+  })
+  .then(function (paymentInfo) {
+    return updateWallet(paymentInfo);
+  })
+  .catch(function (err) {
+    console.log("Error", err);
+  });
+
+function isValidCart(cart = []) {
+  return !!cart.length;
+}
+
+function createOrder(cart) {
+  return new Promise(function (resolve, reject) {
+    if (!isValidCart(cart)) {
+      reject(new Error("Cart is not valid"));
+    }
+    // Call the API for adding items into cart
+    const orderId = Math.floor(Math.random() * 100000);
+    resolve(orderId);
+  });
+}
+
+function proceedToPayment(orderId) {
+  return new Promise(function (resolve, reject) {
+    if (!orderId) {
+      reject(new Error("Error while payment"));
+    }
+    // Call the API for payment
+    const paymentInfo = {
+      paidAmount: 1000,
+      balanceAmount: 500,
+    };
+    resolve(paymentInfo);
+  });
+}
+
+function showOrderSummary(paymentInfo) {
+  return new Promise(function (resolve, reject) {
+    // Call the API if any
+    console.log(
+      `Order summary is displayed || Paid Amount: ${paymentInfo.paidAmount}`
+    );
+    resolve(paymentInfo);
+  });
+}
+
+function updateWallet(paymentInfo) {
+  return new Promise(function (resolve, reject) {
+    // Call the API if any
+    console.log(
+      `Updated wallet balance || Balance amount: ${paymentInfo.balanceAmount}`
+    );
+    resolve(paymentInfo);
+  });
+}
+```
+
+<code>Output :-</code>
+
+```
+Order ID 53852
+paymentInfo {paidAmount: 1000, balanceAmount: 500}
+Order summary is displayed || Paid Amount: 1000
+Updated wallet balance || Balance amount: 500
 ```
 
 </p>
