@@ -139,13 +139,11 @@ function validateCart(cart) {
 
 <b>Promise Task</b> :
 
+- Make use of promise chain with example async functions creatOrder, proceedToPayment, showOrderSummary, updateWallet. 
+
 <code>Task :-</code>
 
 ```javascript
-// Task:
-// Make use of promise chain with example async functions
-// creatOrder, proceedToPayment, showOrderSummary, updateWallet
-
 const cart = ["shoes", "pants", "kurta"];
 createOrder(cart)
   .then(function (orderId) {
